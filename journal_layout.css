@@ -1,0 +1,40 @@
+* { box-sizing: border-box; margin: 0; }
+
+body {
+    background: url("background.gif") repeat;
+    margin: 0;
+    font-family: Arial, serif;
+    color: #5fa9aa;
+}
+
+/* Sets orange border: thickness/border-type/color */
+.redBorder { border: none; background-color: #A8F0F0;  }
+
+/* sets orange border: thickness/border-type/color and the some space around the element */
+.orangeBorder { border: none; margin: 2px; }
+.orangeBorder h2 { font-size: 14pt;}
+
+/* sets blue border for the 2 borders that require it, the bg color to white, and space on top of element */
+.blueBorder1, .blueBorder2 { border: 4px solid #C2E9E9; background-color: #E8FBFB; padding: 5px; margin-top: 10px; }
+
+/* selects the span tags that are inside the h2 tags that are respectively embedded in both blueBorder1 & blueBorder2 */
+.blueBorder1 h2 span, .blueBorder2 h2 span { border-bottom: 2px blue dashed; }
+
+/* sets h2 tags both inside blueBorder1 & blueBorder2 to appear at the top */
+.blueBorder1 h2, .blueBorder2 h2 { margin-top: 5px; }
+
+/* css for entire green border: handling the border, the bg color, and margin handling: (top)-(left/right)-(bottom) */
+.greenBorder { border: 5px solid white; background: white; margin: 10px 10% 15px; }
+
+/* as float doesn't seem to register, text-align focuses towards setting positions i.e. center or in this case right */
+.redBorder h1, .orangeBorder h2 { text-align: right; margin: 0; }
+
+/* sets the content to flex layout(row-like structure) and sets spacing to top/bottom and left/right */
+.blueContent1, .blueContent2 { display: flex; margin: 15px 5px; }
+
+/* css for content inside the blue borders */
+.blueContent2 span p { margin-top: 10px; margin-right: 10px; }
+
+/* css for the links at the bottom */
+.web-links { margin-left: 10%; }
+
